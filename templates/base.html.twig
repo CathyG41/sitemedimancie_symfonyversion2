@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+    
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Medimancie{% endblock %}</title>
+        {# <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 
+        viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+         #}
+        <link rel="stylesheet" href="{{ asset('/css/style.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+       {% block head %}
+        <meta name="author" content="Cathy GRAND">
+        <meta name="language" content="fr">
+        <meta name="robots" content="index,follow">
+        <meta name="date" content="2023-04-12">
+        <meta name="description" content="Bienvenue sur le site de la Medimancie - 
+                                      Découvrez notre méthode unique de méditation laïque associée à la cartomancie">
+        <meta name="keywords" content="medimancie, méditation, cartomancie, laïcité">
+     {% endblock %}    
+        
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -14,6 +32,87 @@
         {% endblock %}
     </head>
     <body>
+<header>
+    <!--HEADER-->
+        
+       <nav id="fleche">
+          
+          
+            <a href="{{ path('app_home') }}"><img src="{{ asset('/assets/img/LOGO.jpg ')}}" alt="Logo Medimancie"></i></a>
+        
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ path('app_home') }}">Accueil</a></li>
+                    <li><a href="{{ path('app_medi') }}">Medi</a></li>
+                    <li><a href="{{ path('app_mancie') }}">Mancie</a></li>
+                    <li><a href="{{ path('app_apropos') }}">A propos</a></li>
+                    <li><a href="{{ path('app_seance') }}">Séance</a></li>
+                    <li><a href="{{ path('app_contact') }}">Contact</a></li>
+                    <li><a href="liste_contact.php">liste_contact</a></li>
+                </ul>
+            </div>
+            
+    
+            <hr size="0.6" width="100%" color="CC9966">
+    
+            <!--header responsive avec ex tuto coder.com-->
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">&times;</a>
+                <ul>
+                    <li><a href="{{ path('app_home') }}">Accueil</a></li>
+                    <li><a href="{{ path('app_medi') }}">Medi</a></li>
+                    <li><a href="{{ path('app_mancie') }}">Mancie</a></li>
+                    <li><a href="{{ path('app_apropos') }}">A propos</a></li>
+                    <li><a href="{{ path('app_seance') }}">Séance</a></li>
+                    <li><a href="{{ path('app_contact') }}">Contact</a></li>
+                    <li><a href="liste_contact.php">liste_contact</a></li>
+                </ul>
+            </div>
+             <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+    
+                </span>
+             </a>
+            </nav>
+        </header> 
+
+
+
+
+
         {% block body %}{% endblock %}
+
+  
+        
+        {# <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>   #}
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/app.js"></script>
+        
+
+<footer>
+            <div class="logos_contacts">
+                <ul>
+                    <li><a href="{{ path('app_contact') }}"><img src="{{ asset('/assets/img/Logo Adresse du site.jpg ')}}" alt="Adresse postale de Medimancie"></a></li>   
+                    <li><a href="https://www.tiktok.com/@medimancie"><img src="{{ asset('/assets/img/tiktok.jpg ')}}" alt="Logo lien chaîne TikTok de Medimancie"></a></li>
+                    <Li><a href="{{ path('app_contact') }}"><img src="{{ asset('/assets/img/Logo Email du site.jpg ')}}" alt="Logo adresse email de medimancie"></a></Li>
+                    <li><a href="https://www.youtube.com/@medimancie"><img src="{{ asset('/assets/img/youtube.jpg ')}}" alt="Logo lien chaîne YouTube de Medimancie"></a></li>   
+                    <Li><a href="{{ path('app_contact') }}"><img src="{{ asset('/assets/img/Logo Téléphone du site.jpg ')}}" alt="Logo numero de téléphone de Medimancie"></a></Li>  
+                   </ul>
+            </div>
+            <Div class="footer">
+             <ul class="footer_ecriture" >
+                <li>Copyright©2023 Medimancie</li>
+                <li><a href="{{ path('app_mentionslegales') }}">Mentions Légales et politique de confidentialité</a></li>
+                <li><a href="{{ path('app_cgv') }}">Conditions Générales de Vente</a></li>
+             </ul>
+            </Div>
+        </footer>
+    </div> 
     </body>
 </html>
+

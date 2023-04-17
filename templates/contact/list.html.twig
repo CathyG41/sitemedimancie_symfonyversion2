@@ -1,0 +1,51 @@
+{% extends 'back.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+
+
+<div id="global">
+ 
+ <div class= "tableau_messages">
+  <table >
+                   <thead>
+                       <tr>
+                           <th>Nom</th>
+                           <th>Prénom</th>
+                           <th>Email</th>
+                           <th>Message</th>
+                           <th>Actions</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       {% for contact in contacts %}
+                       <tr>
+                           <td>{{ contact.nom }}</td>
+                           <td>{{ contact.prenom }}</td>
+                           <td>{{ contact.email }}</td>
+                           <td>{{ contact.message }}</td>
+                         <td>
+                                   <a href="{{ path('contact_edit', {id: contact.id}) }}" class="edit_contact">Editer</a>
+                                   <a href="{{ path('contact_delete', {id: contact.id}) }}" class="edit_delete" onclick="return confirm('Vous voulez supprimer ?')">Supprimer</a>
+                                    <button><a href="mailto: {{ contact.email }}">Répondre</a></button>
+                         </td>
+                           </tr>
+
+                       {% endfor %}
+                   </tbody>
+    </table>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+{% endblock %}

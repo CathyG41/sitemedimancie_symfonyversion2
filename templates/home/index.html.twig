@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Accueil - Medimancie{% endblock %}
+
+{% block head %}
+    <meta name="description" content="Découvrez une pratique spirituelle innovante et originale associant la cartomancie et la méditation.
+                                 @Medimancie propose des séances individuelles et des abonnements annuels en groupe, dans un cadre laïque
+                                 et bienveillant. Rejoignez notre communauté et trouvez votre chemin vers le bien-être et le développement personnel.">
+    <meta property="og:title" content="Accueil - Medimancie">
+    <meta property="og:description" content="Découvrez une pratique spirituelle innovante et originale associant la cartomancie et la méditation.
+                                 @Medimancie propose des séances individuelles et des abonnements annuels en groupe, dans un cadre laïque
+                                 et bienveillant. Rejoignez notre communauté et trouvez votre chemin vers le bien-être et le développement personnel.">
+    <meta name="keywords" content="Méditation, spiritualité, bien-être,développement personnel">
+{% endblock %}
+
+
+
+
+{% block body %}
+
+
+ <Div class="profil_1">
+    <a href="{{ path('app_seance') }}"><img src="{{ asset('/assets/img/Logo photo profil.jpg ')}}" alt="Logo photo de profil de Medimancie"></i></a>
+        </Div>
+    <Main>
+        <Div class="titre_bienvenue">
+            <h1>Bienvenue sur le site web de Medimancie !</h1>
+        </Div>
+        <Div class="texte_bienvenue">    
+                <p>"Bonjour et merci pour la visite, je suis Cathy, la medimancienne qui dirige Medimancie. <br>
+                    J'espère que vous trouverez le site utile. Nhésitez pas à nous contacter si vous avez
+                    des questions où des commentaires. 
+                    <br>
+                    Medimancie est une entreprise qui propose des lectures d'oracle et des méditations pour
+                    faire simple comme présentation mais <br> vous pouvez en savoir plus sur moi et sur ce que 
+                    je fais en parcourant le site. J'éprouve beaucoup de plaisir à vous proposer ce <br> contenu,
+                    cela me permet de faire le travail que j'aime, en utilisant mes dons pour vous aider. 
+                    Bonne visite ! <br>(Merci)"" Cathy
+                </p>
+        </Div>
+
+    <!-- Intro article : C'est quoi la medimancie ?-->
+        <div class="titre_cestquoi_medimancie">
+            <h1>C'est quoi Medimancie ?</h1>
+        </div>
+        <Div class="texte_cestquoi_medimancie">
+                <P>Médimancie est une pratique de développement personnelle spirituel laïque inspiré et fondée sur
+                    le livre ancien du Yi King le <br> livre des transformations Chinois qui à plusieurs millénaire et 
+                    la pratique de la méditation de pleine conscience de type MBSR,<Br> une méthode de méditation moderne
+                    laique développer par des professionnels de la santé qui ont étudier scientifiquement les <br> bienfaits
+                    de la pratique pour agir sur notre santé physique et moral en profondeur. <br> <br>
+
+                    Medimancie est composé de deux mots ; médi pour méditation et mancie, cartomancie. <br> <br>
+                
+                    La pratique de Medimancie est d'amener les gens à trouver des sujets à méditer adéquats à leurs attentes et leurs vies.
+                    C'est là <br> que le Yi King et le tirage des carte de l'Oracle du Tao intervient, c'est la partie mancie. 
+                    Et ensuite d'amener ces gens à adopter <br> un comportement de santé en apprenant à pratiquer la méditation au quotidien et
+                    à utiliser cet outil comme développement  personnel.
+                </P>
+            
+        </Div>
+        <div class="fleche">
+         <a href="#fleche"><img src="{{ asset('/assets/img/Flèche orange.jpg ')}}" alt="Flèche de navigatiopn"></a>
+        </div>
+        </Main>
+
+
+{% endblock %}

@@ -1,0 +1,1636 @@
+
+body{
+    width: 100%;
+    font-size: 100%;
+    font-family:'Cormorant Garamond';
+}
+
+#global{
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    background: #FFFFFF;
+}
+
+a{text-decoration: none; color: black;}
+
+/* HEADER*/
+header{
+    width: 100%;
+}
+
+hr {
+    border: none;
+    box-shadow: 0px -2px 5px 3px #316594;
+    margin-top: 30px;
+}
+/*MENU HEADER*/
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a img {
+    width: 300px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-top: 1%;
+    font-size: 16px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+.menu a{
+    color: #FF6633;
+}
+ul li{
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: right;
+    
+}
+
+/* MENU ADMIN */
+
+
+#menu_deroulant {
+    position: relative;
+    display: flex;
+    width: 27%;
+    margin-top: 2%;
+    margin-left: 6%;
+}
+.logo_admin{
+	cursor: pointer;
+    width: 25%;
+    
+}
+.profil_utilisateur{
+	display: flex;
+	align-items: center;
+    color: #663300;
+    margin-left: 37%;
+    margin-top: 75px;
+}
+.contenu_deroulant{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	height: 80px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 5px;
+	z-index: 1;
+    color: #663300;
+}
+#menu_deroulant:hover .contenu_deroulant{
+	display: block;
+	cursor: pointer;
+}
+.contenu_deroulant p{
+	padding: 1px;
+} 
+
+
+
+
+
+
+/* MAIN */
+#contenu{
+width: 100%;
+}
+
+
+.fleche {
+    display: flex;
+    margin-left: 80%;
+    margin-top: 142px;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+   
+}
+.logos_contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-top: 136px;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #CC9966;
+    font-size: larger;
+    margin-top: 131px;
+}
+.footer_ecriture{
+    color: #FFF;
+}
+
+/* ADMIN TABLEAU DE BORD MESSAGES */
+/* LES DERNIERS MESSAGES */
+.composant{
+	margin-top: 3.5rem;
+	display: flex;
+	
+}
+.messages{
+	background-color: #CC9966;
+	border-radius: 10px;
+}
+.titre_derniers_messages, .liste_derniers_messages{
+	padding: 2px
+}
+.titre_derniers_messages{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    color: #FFFFFF;
+
+}
+.titre_derniers_messages button{
+	background-color: #663300;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 12px;
+	padding: .4px 2px;
+	border: none;
+	cursor: pointer;
+}
+
+.tableau_messages{
+	width: 100%;
+}
+
+.deco_table td{
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    padding: 6px 4px;
+}
+
+.deco_table th{
+    color: #316594;
+}
+.deco_table{
+	border-collapse: collapse;
+    width: 100%;
+}
+.deco_table tr{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+/* PAGE ACCUEIL*/
+/* Bienvenue chez medimancie */
+.profil_1 {
+    display: flex;
+    margin-left: 37%;
+    margin-top: 75px;
+}
+.titre_bienvenue {
+    display: flex;
+    margin-left: 19%;
+    margin-top: 19px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 19px;
+    color: #316594;
+}
+.texte_bienvenue {
+    display: flex;
+    font-family: 'Cormorant Garamond';
+    text-align: center;
+    color: #000000;
+    margin-left: 20%;
+}
+/* C'est quoi medimancie ? */
+.titre_cestquoi_medimancie {
+    display: flex;
+    margin-left: 33%;
+    margin-top: 46px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 19px;
+    color: #FF4F04;
+}
+
+.texte_cestquoi_medimancie{
+    display: flex;
+    font-family: 'Cormorant Garamond';
+    text-align: center;
+    color: #000000;
+    margin-left: 17%;
+}
+
+
+
+
+
+
+
+
+/* PAGE ARTICLE : MEDITATION  */
+
+/* MAIN*/
+/* Banniere titre */
+.titre_medi_demedimancie{
+    display: block;
+    background-image: url("../img/banniere.jpg");
+    width: 100%;
+    height: 200px;
+    margin-top: 61px;
+    border-radius: 60px;
+    
+}
+.lamedi{
+    font-family: 'Permanent Marker', cursive;
+    color: #FFF;
+    text-align: center;
+    padding: 77px;
+}
+.profil_2 {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 75px;
+}
+
+/* SECTION ARTICLE MEDITATION */
+.article_meditation {
+    /* display: flex;  NON Sinon cela créer des boites de texte */ 
+    margin-left: 43%;
+    margin-top: -265px;
+    width: 46%;
+}
+.titres_meditation_bleu{
+    text-align: left;
+    color: #316594;
+    font-family: 'Permanent Marker', cursive;
+}
+.titres_meditation_orange{
+    text-align: left;
+    color: #FF6633;
+    font-family: 'Permanent Marker', cursive; 
+}
+
+.lien_les_seances_endetail{
+    display: flex;
+    margin-left: 50%;
+    margin-top: 50px;
+    color: #663300;
+}
+.photoponton_meditation{
+    border-radius: 60px;
+    width: 85%;
+}   
+
+
+/* PAGE ARTICLE : MANCIE */
+/* MAIN*/
+/* Banniere titre */
+.titre_mancie_demedimancie{
+    display: block;
+    background-image: url("../img/banniere.jpg");
+    width: 100%;
+    height: 200px;
+    margin-top: 61px;
+    border-radius: 60px;
+}
+.lamancie{
+    font-family: 'Permanent Marker', cursive;
+    color: #FFF;
+    text-align: center;
+    padding: 77px;
+}
+/* SECTION ARTICLE MANCIE*/
+.article_mancie {
+    /* display: flex;  NON Sinon cela créer des boites de texte */ 
+    margin-left: 43%;
+    margin-top: -265px;
+    width: 46%;
+}
+.titres_mancie_bleu{
+    text-align: left;
+    color: #316594;
+    font-family: 'Permanent Marker', cursive;
+}
+.titres_mancie_orange{
+    text-align: left;
+    color: #FF6633;
+    font-family: 'Permanent Marker', cursive; 
+}
+
+
+.lien_lameditation_chezmedimancie{
+    color: #663300;  
+}
+
+.lien_contact{
+    color: #663300;
+}
+
+.lien_pourquoi_consulter{
+    color: #663300;
+}
+
+.lien_offres{
+    color: #663300;
+}
+
+
+/* PAGE A PROPOS */
+.titre_aproposdemoi {
+    display: flex;
+    font-family: 'Permanent Marker', cursive;
+    color: #663300;
+    margin-top: -200px;
+    margin-left: 9%;
+}
+.profil_1 {
+    display: flex;
+    margin-left: 37%;
+    margin-top: 75px;
+}
+/* LES QUESTIONS REPONSES POUR LA PRESENTATION A PROPOS */
+.container_q1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 280px;
+    margin-left: auto;
+}
+.photo_titre_questcequi_q1 {
+    display: flex;
+    margin-left: -8%;
+}
+.photoqu_estcequi{
+    border-radius: 60px;
+}
+.reponse_question_1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 24%;
+}
+.container_q2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto;
+}
+.reponse_question_2 {
+    display: flex;
+    width: 24%;
+}
+.photo_titre_monprojet_q2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+.photo_monprojet{
+    border-radius: 60px;
+}
+.container_q3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto;
+}
+.photo_titre_pourquoireunir_q3 {
+    display: flex;
+    margin-left: -8%;
+}
+.reponse_question_3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 24%;
+}
+.photopourquoi_reunir{
+    border-radius: 60px;
+}
+.container_q4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto;
+}
+.reponse_question_4 {
+    display: flex;
+    width: 24%;
+}
+.photo_titre_macartepreferee_q4 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+.photomacarte_preferee{
+    border-radius: 60px;
+}
+
+
+
+
+/* PAGE SCEANCES  */
+/*SECTION 1 PARTIE Arguments avant présentation facturation */
+.profil_3 {
+    display: flex;
+    margin-left: 8%;
+    margin-top: 152px;
+}
+.photo_menu_seances {
+    display: flex;
+    margin-left: 60%;
+    margin-top: -367px;
+    width: 28%;
+}
+
+.titre_sommaire {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 16%;
+    margin-left: 2%;
+    background-image: url(../img/illustration\ menu\ page.jpg);
+    border-radius: 60px;
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 34px;
+    color: #ff4f04;
+    border: -12px solid #FFFFFF;
+}
+/*SECTION 1 PARTIE Arguments DETAILS DES SEANCES ? */
+.containerles_seances_en_detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto;
+}
+.photoles_seances_en_detail{
+    display: flex; 
+}
+.reponseles_seances_en_detail {
+    display: flex;
+    flex-wrap: wrap;
+    width: 43%;
+    margin-top: 130px;
+}
+.ouverte_atous{
+    color: #FF6633;
+}
+.minutegratruite{
+    color: #316594;
+}
+.photodetails_desseances{
+    border-radius: 60px;
+}
+
+
+/*SECTION 1 PARTIE Arguments POURQUOI Consulter  */
+.containerpourquoi_consulter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto; 
+}
+.reponsepourquoi_consulter{
+    display: flex;
+    flex-wrap: wrap;
+    width: 43%;
+    margin-top: 60px;
+}
+.photopourquoi_consulter{
+   border-radius: 60px; 
+}
+
+
+/*SECTION 1 PARTIE Arguments QUAND Consulter  */
+.containerquand_consulter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto;  
+}
+.reponsequand_consulter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 43%;
+    margin-top: 134px;
+}
+.photoquandconsulter{
+    border-radius: 60px;
+}
+
+/* SECTION 1 PARTIE Témoignages des membres*/ 
+.titre_temoignages_des_membres{
+    display: block;
+    background-image: url("../img/banniere.jpg");
+    width: 100%;
+    height: 200px;
+    margin-top: 61px;
+    border-radius: 60px;
+}
+.temoignages_des_membres{
+    font-family: 'Permanent Marker', cursive;
+    color: #FFF;
+    text-align: center;
+    padding: 77px; 
+}
+.temoignages_avatar1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto; 
+}
+.texte_bas_avatar1 {
+    margin-top: 9%;
+    margin-left: 30px;
+  
+}
+.droite {
+    margin-top: 3%;
+    margin-left: 30px;
+    width: 40%;
+}
+.temoignages_avatar2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto;   
+}
+.texte_bas_avatar2{
+    margin-top: 9%;
+    margin-left: 30px; 
+}
+.temoignages_avatar3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto;   
+}
+.texte_bas_avatar3{
+    margin-top: 9%;
+    margin-left: 30px; 
+}
+.temoignages_avatar4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 160px;
+    margin-left: auto;   
+}
+.texte_bas_avatar4{
+    margin-top: 9%;
+    margin-left: 30px; 
+}
+
+
+
+/* PAGE SEANCES*/
+/* SEXTION 2 PARTIE Facturation et achat*/
+
+.titre_tarification{
+    display: block;
+    background-image: url("../img/banniere.jpg");
+    width: 100%;
+    height: 200px;
+    margin-top: 61px;
+    border-radius: 60px;
+}
+.tarification{
+    font-family: 'Permanent Marker', cursive;
+    color: #FFF;
+    text-align: center;
+    padding: 77px;
+}
+.titre_tarification_des_seances {
+    color: #FF6633;
+    font-family: 'Permanent Marker', cursive;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 135px;
+}
+.tarification_details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -4px;
+    margin-left: auto;
+}
+.colonne_gauche {
+    margin-top: 2%;
+    margin-left: 126px;
+    width: 74%;
+}
+.colonne_droite {
+    margin-top: -60%;
+    margin-left: 660px;
+    width: 37%;
+}
+.titre_noir{
+    color: #080302;
+    font-family: 'Permanent Marker', cursive;
+}
+.titre_orange{
+    color: #FF6633;
+    font-family: 'Permanent Marker', cursive; 
+}
+
+.boutonseances_individuel150{
+    border-radius: 60px;
+}
+.boutonseances_abonnement450{
+    border-radius: 60px;
+}
+
+/* PAGE SEANCES*/
+/* SEXTION 2 PARTIE Oracle lien vente*/
+.titre_oracles_utilisés {
+    margin-top: 13%;
+    margin-left: 25%;
+    width: 50%;
+    color: #316594;
+    font-family: 'Permanent Marker', cursive;
+}
+.soustitre_oracles {
+    margin-top: 2%;
+    margin-left: 29%;
+    width: 42%;
+    color: #ff6633;
+    font-family: 'Permanent Marker', cursive;
+}
+.galerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 9%;
+    margin-left: auto;
+}
+.oracle_tao{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -4px;
+    margin-left: 1%;
+    
+}
+.livre_yiking{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -4px;
+    margin-left: 1%;  
+}
+.oracle_manga{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -4px;
+    margin-left: 1%;
+}
+.Prix{
+    color: #000000;
+    text-align: center;
+}
+.produits{
+    text-align: center;
+   
+}
+.lien_fnac{
+    text-align: center;
+    background-color: #316594;
+    color: #FFF;
+    border-radius: 60px;
+}
+
+/* PAGE RESRVATION COMMANDE */
+.titre_reservation {
+    text-align: center;
+    margin-left: -2%;
+    margin-top: 10%;
+}
+.titre_bleu{
+    color: #316594;
+    font-family: 'Permanent Marker', cursive;
+}
+.formulaire_dejamembre2 {
+    margin-top: 4%;
+    margin-left: 43%;
+    display: flex;
+}
+.formulaire_dejamembre2 input{
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width:100%; 
+}
+
+.reservation_commande {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -16px;
+    margin-left: auto;
+}
+.formulaire_non_membres {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    margin-left: 4%;
+    width: 30%;
+}
+.titre_formulaire_non_membres {
+    margin-top: 6%;
+    margin-left: 7%;
+}
+.formulaire_non_membres input{
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width:100%; 
+}
+.formulaire_non_membres textarea{
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width:100%; 
+}
+.validation_details_commande input{
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width:100%;
+    text-align: center;
+
+}
+
+
+.votre_commande {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: -7%;
+    margin-top: 155px;
+    background: rgba(204, 153, 102, 0.15);
+    width: 33%;
+    border-radius: 60px;
+}
+.validation_reso_commande {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -41%;
+    margin-left: 8%;
+    width: 39%;
+}
+.validation_reso_commande h3 {
+    text-align: center;
+    margin-top: 133%;
+}
+.details_commande {
+    background-color: #FFF;
+    text-align: justify;
+    width: 218%;
+    padding: 12px;
+    border-radius: 60px;
+    margin-top: 92px;
+    border-spacing: 32px;
+}
+.validation_details_commande {
+    margin-top: 38%;
+    margin-left: 20%;
+}
+
+.iban_medimancie{
+    margin-top: 8%;
+    margin-left: 19%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE CONTACT */
+
+
+.form{
+    padding: 10px;
+   
+}  
+ input[type="submit"] {
+    margin-top: 12px;
+} 
+
+button.form-c {
+    margin-top: 12px;
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.formulaire_membre_1partie {
+    display: block;
+    margin-top: 8%;
+    margin-left: -2%;
+    flex-wrap: wrap;
+}
+.formulaire_membre_2partie{
+    display: block;
+    margin-top: 8%;
+    margin-left: -2%;
+     
+}
+.formulaire_membre label {
+    margin-top: 4px;
+    display: block;
+    margin-left: 91px;
+}
+select#subject {
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 7%;
+}
+.formulaire_message input{
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width:100%;
+}
+.formulaire_message textarea {
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px; 
+}
+
+
+
+
+
+.formulaire_dejamembre input{
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width:100%;
+}
+.formulaire_membre input {
+    padding: 5px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 115px;
+}
+.formulaire_membre textarea{
+    padding: 3px;
+    border: 1px solid #CC9966;
+    border-radius: 5px;
+    width:60%;
+    margin-left: 115px; 
+}
+.premier_partieformulaire{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.titre_formulaire_membre{
+    margin-left: 10px;
+}
+
+.texte_bonjourmerci {
+    display: flex;
+    font-family: 'Cormorant Garamond';
+    text-align: left;
+    color: #000000;
+    margin-left: 11%;
+    margin-top: 118px;
+}
+.profil_4 {
+    display: flex;
+    margin-left: 70%;
+    margin-top: -247px;
+}
+.couleurfondcoordonnées{
+    background: rgba(204, 153, 102, 0.15);
+}
+.textes_logos_contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 21%;
+    margin-top: 19px;
+       
+}
+.nouscontacter {
+    color: #316594;
+ text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.dejamembre {
+    color: #FF6633;
+  text-align: center;
+    font-family: 'Permanent Marker', cursive; 
+}
+
+
+
+.formulaire_contact {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 199px;
+    width: 100%;
+    
+}
+.formulaire_message {
+    margin-left: 11%;
+    margin-top: 17px;
+}
+.formulaire_dejamembre {
+  
+    margin-left: 29%;
+    margin-top: -7px;
+}
+.titre_pourquoi_membre {
+    color: #FF6633;
+    font-family: 'Permanent Marker', cursive;
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 121px;
+}
+.texte_pourquoi_membre {
+    width: 77%;
+    margin-left: 5%;
+    margin-top: 41px;
+}
+
+.formulaire_membre {
+    margin-left: 32%;
+    margin-top: 135px;
+    background: rgba(204, 153, 102, 0.15);
+    width: 39%;
+    border-radius: 60px;
+    align-content: center;
+}
+.titre_formulaire_membre{
+    color: #316594;
+    font-family: 'Permanent Marker', cursive;   
+    text-align: center;
+}
+.liencommande_pagemembre{
+    margin-left: 40%;
+    margin-top: 129px;
+    font-family: 'Permanent Marker', cursive;
+    }
+
+
+
+
+
+
+
+
+
+/* PAGE MENTIONS LEGALES */
+.titre_mentionslegales{
+    display: block;
+    background-image: url("../img/banniere.jpg");
+    width: 100%;
+    height: 200px;
+    margin-top: 61px;
+    border-radius: 60px;
+}
+.mentionslegales{
+    font-family: 'Permanent Marker', cursive;
+    color: #FFF;
+    text-align: center;
+    padding: 77px;
+}
+
+.texte_mentionslegales {
+    margin-left: 16%;
+    margin-top: 115px;
+    width: 70%;
+}
+
+
+
+/* PAGE CGV */
+.titre_cgv{
+    display: block;
+    background-image: url("../img/banniere.jpg");
+    width: 100%;
+    height: 200px;
+    margin-top: 61px;
+    border-radius: 60px;
+}
+.cgv{
+    font-family: 'Permanent Marker', cursive;
+    color: #FFF;
+    text-align: center;
+    padding: 77px;
+}
+
+.texte_cgv {
+    margin-left: 16%;
+    margin-top: 115px;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LA PARTIE RESPONSIVE */
+
+
+
+
+/* HEADER LE MENU EN LIGNE ET LE BURGER */
+
+#mySidenav{
+    display: none;
+}
+@media(max-width:1264px) 
+{
+    .menu{
+        display: flex;
+        width: 100px;
+        height: 30px;
+        overflow: hidden;
+        text-align: left;
+        white-space: nowrap;
+        text-indent: -9999px;
+        background: transparent no-repeat;
+    }
+    #global{
+        width: 100%;
+        padding: 0px;
+    }
+    nav a img {
+        width: 200px;
+    }
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -250px;
+        background-color: #e8e8e8;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+      }
+     
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidenav a:hover {
+        color: #111;
+      }
+      .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .sidenav.active {
+        left: 0;
+      }
+      .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+      }
+      .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: #FF6633;
+        margin: 6px 0;
+      }
+    #mySidenav{
+        display: block;
+    }
+
+    /* FOOTER LOGOS CONTACTS RESPONSIVE */
+    .logos_contacts {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 26%;
+        margin-top: 16%;
+        flex-direction: column;
+        width: 14%;
+        
+    }
+
+
+    /* PAGE ACCUEIL*RESPONSIVE / 
+    /* Bienvenue chez medimancie */
+    .profil_1 {
+    display: flex;
+    margin-left: 17%;
+    margin-top: 77px;
+    }
+    .titre_bienvenue {
+    display: flex;
+    margin-left: 3%;
+    margin-top: 21px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 16px;
+    color: #316594;
+    }
+    .texte_bienvenue {
+    display: flex;
+    font-family: 'Cormorant Garamond';
+    text-align: center;
+    color: #000000;
+    margin-left: -1%;
+    }
+    /* C'est quoi medimancie ? */
+    .titre_cestquoi_medimancie {
+    display: flex;
+    margin-left: 14%;
+    margin-top: 47px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 16px;
+    color: #FF4F04;
+    }
+    .texte_cestquoi_medimancie {
+    display: flex;
+    font-family: 'Cormorant Garamond';
+    text-align: center;
+    color: #000000;
+    margin-left: 0%;
+    }
+    /* SECTION ARTICLE MEDITATION  RESPONSIVE*/
+    .article_meditation {
+    margin-left: 7%;
+    margin-top: 94px;
+    width: 86%;
+    }
+    .profil_2 {
+    display: flex;
+    margin-left: 18%;
+    margin-top: 75px;
+    }
+    /* SECTION ARTICLE MANCIE RESPONSIVE*/
+    .article_mancie {
+    margin-left: 12%;
+    margin-top: 74px;
+    width: 77%;
+    }
+    /* PAGE A PROPOS RESPONSIVE*/
+    .titre_aproposdemoi {
+    display: flex;
+    font-family: 'Permanent Marker', cursive;
+    color: #663300;
+    margin-top: -363px;
+    margin-left: 23%;
+    }
+    .profil_1 {
+    display: flex;
+    margin-left: 19%;
+    margin-top: 83px;
+    }
+    /* LES QUESTIONS REPONSES POUR LA PRESENTATION A PROPOS RESPONSIVE*/
+    .photo_titre_questcequi_q1 {
+    display: flex;
+    margin-left: -8%;
+   
+    }
+    .photoqu_estcequi {
+    border-radius: 60px;
+    width: 60%;
+    margin-top: 14%;
+    margin-left: 20%;
+    }
+    .reponse_question_1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 79%;
+    }
+    /* INVERSEMENT DES DIV pour faire photo et texte*/
+    .container_q2{
+        flex-direction: column-reverse;
+    }
+    .photo_titre_monprojet_q2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -7%;
+        margin-top: 3%;
+    }
+    .photo_monprojet{
+    border-radius: 60px;
+    width: 60%;
+    margin-left: 23%;
+    margin-top: -29%;
+    }
+    .reponse_question_2 {
+        display: flex;
+        width: 79%;
+        margin-left: 11%;
+        margin-top: 6%;
+    }
+    .photo_titre_pourquoireunir_q3 {
+        display: flex;
+        margin-left: -8%;
+        margin-top: -37%;
+        margin-left: -3%;
+    }
+    .reponse_question_3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 79%;
+        margin-top: 10%;
+    }
+    .photopourquoi_reunir{
+    border-radius: 60px;
+    width: 60%;
+    margin-top: 14%;
+    margin-left: 20%;
+    }
+     /* INVERSEMENT DES DIV pour faire photo et texte*/
+    .container_q4{
+        flex-direction: column-reverse;
+    }
+    .reponse_question_4 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 79%;
+        margin-top: 10%;
+        margin-left: 9%;
+    }
+    .photo_titre_macartepreferee_q4 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-top: -18%;
+    }
+    .photomacarte_preferee {
+        width: 78%;
+        margin-top: 7%;
+        margin-left: 5%;
+    }
+
+
+
+    /* SCEANCES RESPONSIVE */
+
+    .profil_3 {
+        display: flex;
+        margin-left: 20%;
+        margin-top: 44px;
+    }
+    .photo_menu_seances {
+        display: flex;
+        margin-left: 14%;
+        margin-top: 52px;
+        width: 65%;
+    }
+/*SECTION 1 PARTIE Arguments DETAILS DES SEANCES ? */
+
+.photoles_seances_en_detail{
+    display: flex; 
+}
+.reponseles_seances_en_detail {
+    display: flex;
+    flex-wrap: wrap;
+    width: 83%;
+    margin-top: 5%;
+}
+
+.photodetails_desseances {
+    border-radius: 60px;
+    width: 59%;
+    margin-top: -8%;
+    margin-left: 18%;
+}
+
+.photopourquoi_consulter {
+    border-radius: 60px;
+    width: 89%;
+    margin-top: -7%;
+    margin-left: 2%;
+}
+.reponsepourquoi_consulter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 83%;
+    margin-top: 9%;
+}
+.reponsequand_consulter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 79%;
+    margin-top: 10%;
+}
+.photoquandconsulter {
+    border-radius: 60px;
+    width: 76%;
+    margin-left: 10%;
+    margin-top: -8%;
+}
+/* LA TARIFICATION RESPONSIVE */
+
+
+.titre_tarification_des_seances {
+    color: #FF6633;
+    font-family: 'Permanent Marker', cursive;
+    width: 95%;
+    margin-top: 20%;
+    margin-left: 12%;
+    font-size: 19px;
+}
+.colonne_gauche {
+    margin-top: 3%;
+    margin-left: 18%;
+    width: 60%;
+}
+.colonne_droite {
+    margin-top: 17%;
+    margin-left: 17%;
+    width: 65%;
+}
+
+.titre_oracles_utilisés {
+    margin-top: 18%;
+    margin-left: 20%;
+    width: 66%;
+   
+}
+.soustitre_oracles {
+    margin-top: 7%;
+    margin-left: 16%;
+    width: 72%;
+    font-size: 13px;
+}
+.galerie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 17%;
+    margin-left: auto;
+}
+.oracle_tao a{
+    margin-left: 30%;
+}
+.lien_fnac {
+    width: 30%;
+    margin-left: 35%;
+}
+.livre_yiking a{
+    margin-left: 30%;
+}
+
+.oracle_manga a{
+    margin-left: 30%;
+}
+
+.livre_yiking {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 111px;
+    margin-left: 1%;
+}
+
+.oracle_manga {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 111px;
+    margin-left: 1%;
+}
+
+/* RESERVATION COMMANDE RESPONSIVE */
+
+.titre_reservation {
+    text-align: center;
+    margin-left: 9%;
+    margin-top: 11%;
+    width: 79%;
+}
+.formulaire_dejamembre2 {
+    margin-top: 11%;
+    margin-left: 28%;
+    display: flex;
+}
+
+.reservation_commande {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -16px;
+    margin-left: auto;
+}
+.formulaire_non_membres {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 24%;
+    margin-left: 24%;
+    width: 47%;
+}
+.votre_commande {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 9%;
+    margin-top: 13%;
+    background: rgba(204, 153, 102, 0.15);
+    width: 80%;
+    border-radius: 60px;
+}
+
+.iban_medimancie {
+    margin-top: 21%;
+    margin-left: 15%;
+}
+
+
+/* CONTACT RESPONSIVE */
+.textebonjour_profil4{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 9%;
+    margin-top: 13%;
+    width: 60%;
+}
+
+.textebonjour_profil4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 9%;
+    margin-top: -18%;
+    width: 30%;
+}
+.texte_bonjourmerci {
+    display: flex;
+    font-family: 'Cormorant Garamond';
+    text-align: left;
+    color: #000000;
+    margin-left: 18%;
+    margin-top: 99%;
+}
+.profil_4 {
+    display: flex;
+    margin-left: 30%;
+    margin-top: -165%;
+}
+.textes_logos_contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-top: 13%;
+    width: 53%;
+  
+}
+
+.formulaire_contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 13%;
+    margin-top: 19%;
+    width: 100%;
+}
+
+.formulaire_dejamembre {
+    margin-left: 16%;
+    margin-top: 20%;
+}
+.titre_pourquoi_membre {
+    
+    margin-left: 22%;
+    margin-top: 20%;
+}
+
+.texte_pourquoi_membre {
+    width: 79%;
+    margin-left: 11%;
+    margin-top: 7%;
+}
+.formulaire_membre {
+    margin-left: 9%;
+    margin-top: 21%;
+    width: 79%;
+    border-radius: 60px;
+    align-content: center;
+}
+.formulaire_membre_3partie{
+    margin-left: 9%;
+    margin-top: 21%;
+}
+.formulaire_membre_3partie {
+    margin-left: -10%;
+    margin-top: 21%;
+}
+.liencommande_pagemembre {
+    margin-left: 21%;
+    margin-top: 18%;
+   
+}
+
+}
+
+
+
+
+
+
+
